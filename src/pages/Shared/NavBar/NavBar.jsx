@@ -33,13 +33,17 @@ const NavBar = () => {
                 
                 <button onClick={handleLogOut} className="btn btn-ghost -mt-2">LogOut</button>
 
-                
-                <img
-                    src={user?.photoURL}  
-                    alt="User"
-                    className="rounded-full h-9 w-9 mr-2 ml-8"
-                />
-                <span className="font-bold text-xl text-white-400 mt-1">{user?.displayName}</span>
+              
+                <Link to="/dashboard/cart">
+                    <div className="flex items-center">
+                        <img
+                            src={user?.photoURL}
+                            alt="User"
+                            className="rounded-full h-9 w-9 mr-2 ml-8"
+                        />
+                        <span className="font-bold text-xl text-white-400 mt-1">{user?.displayName}</span>
+                    </div>
+                </Link>
                 
             </> : <>
                 <li><Link to="/login">Login</Link></li>
