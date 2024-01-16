@@ -24,13 +24,13 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 
   export const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Main></Main>,
       children: [
         {
             path: '/',
             element: <Home></Home>
-        },
+        }, 
         {
           path: 'menu', 
           element: <Menu></Menu>
@@ -53,7 +53,6 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
         }
       ]
     },
-
     {
       path: 'dashboard',
       element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
@@ -75,12 +74,13 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
           path: 'paymentHistory',
           element: <PaymentHistory></PaymentHistory>
         },
-         // admin only routes
-         {
+
+        // admin only routes
+        {
           path: 'adminHome',
           element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
         },
-         {
+        {
           path: 'addItems',
           element: <AdminRoute><AddItems></AddItems></AdminRoute>
         },
@@ -97,6 +97,7 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
           path: 'users',
           element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
         }
+
       ]
     }
   ]);

@@ -9,12 +9,12 @@ const Dashboard = () => {
     const [cart] = useCart();
 
  // TODO: get isAdmin value from the database
- const isAdmin = useAdmin();
+ const [isAdmin] = useAdmin();
 
     return (
      <div className="flex">
            {/* dashboard side bar */}
-           <div className="w-64 min-h-screen bg-sky-600">
+           <div className={`w-64 min-h-screen ${isAdmin ? 'bg-sky-600' : 'bg-orange-600'}`}>
             
             <ul className="menu  p-4">
             {
