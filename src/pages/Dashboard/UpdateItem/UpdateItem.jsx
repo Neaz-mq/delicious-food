@@ -13,7 +13,7 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 
 const UpdateItem = () => {
 
-    const {name, category, recipe, price, _id} = useLoaderData();
+    const {name, category, recipe, image, price, _id} = useLoaderData();
     const { register, handleSubmit, reset } = useForm();
    
     const axiosPublic = useAxiosPublic();
@@ -112,7 +112,7 @@ const UpdateItem = () => {
                     </div>
 
                     <div className="form-control w-full my-6">
-                        <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
+                        <input  {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
                     </div>
 
                     <button className="btn">
