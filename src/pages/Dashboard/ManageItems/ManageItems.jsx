@@ -64,7 +64,9 @@ const ManageItems = () => {
     }
     return (
         <div>
-            <SectionTitle heading="Manage All Items" subHeading="Hurry up"></SectionTitle>
+           
+           <SectionTitle heading="Manage All Items" subHeading="Hurry up"></SectionTitle>
+         
             <div>
                 <div className="text-center mb-6">
                     <form onSubmit={handleSearch}>

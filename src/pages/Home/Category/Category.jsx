@@ -21,7 +21,7 @@ const Category = () => {
            heading={"Order Online"}
           
           ></SectionTitle>
-         <div className='-ml-36 mr-64'>
+         <div className='lg:-ml-36 lg:mr-64 mr-20 -ml-20'>
          <Swiper
         slidesPerView={4}
         spaceBetween={30}

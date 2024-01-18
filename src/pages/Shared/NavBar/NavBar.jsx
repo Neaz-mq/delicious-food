@@ -36,14 +36,16 @@ const NavBar = () => {
         {
             user && !isAdmin && <li><Link to="/dashboard/userHome">Dashboard</Link></li>
         }
-        <li>
-            <Link to="/dashboard/cart">
-                <button className="btn gap-2 -mt-3">
-                <FaShoppingCart className="mr-4"></FaShoppingCart>
-                    <div className="badge badge-secondary ">+{cart.length}</div>
-                </button>
-            </Link>
-        </li>
+         {!isAdmin && user && (
+            <li>
+                <Link to="/dashboard/cart">
+                    <button className="btn gap-2 -mt-3">
+                        <FaShoppingCart className="mr-4"></FaShoppingCart>
+                        <div className="badge badge-secondary">+{cart.length}</div>
+                    </button>
+                </Link>
+            </li>
+        )}
         {
             user ? <>
             

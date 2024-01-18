@@ -61,15 +61,15 @@ const AdminHome = () => {
 
     return (
         <div>
-            <h2 className="text-3xl">
+            <h2 className=" text-xl lg:text-3xl">
                 <span>Hi, Welcome </span>
                 {
                     user?.displayName ? user.displayName : 'Back'
                 }
             </h2>
-            <div className="stats shadow">
+            <div className="stats shadow w-1/2 lg:w-full ">
 
-                <div className="stat">
+                <div className="stat w-1/2">
                     <div className="stat-figure text-secondary">
                         <FaDollarSign className='text-3xl'></FaDollarSign>
                     </div>
@@ -107,7 +107,7 @@ const AdminHome = () => {
                 </div>
 
             </div>
-            <div className="flex">
+            <div className="flex mt-5 lg:flex-row flex-col -ml-10 mr-16">
                 <div className="w-1/2">
                     <BarChart
                         width={500}
@@ -130,7 +130,7 @@ const AdminHome = () => {
                         </Bar>
                     </BarChart>
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 lg:-mt-16 ml-10">
                     <PieChart width={400} height={400}>
                         <Pie
                             data={pieChartData}
@@ -146,7 +146,7 @@ const AdminHome = () => {
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                             ))}
                         </Pie>
-                        <Legend></Legend>
+                        <Legend className='lg:-mt-5 lg:ml-8 lg:-mr-8'></Legend>
                     </PieChart>
                 </div>
             </div>
