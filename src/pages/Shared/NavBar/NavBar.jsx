@@ -89,7 +89,7 @@ const NavBar = () => {
                     </ul>
                 )}
             </div>
-                    <a href="/" className="-mt-2 ml-24 -mr-20 lg:ml-0 lg:mr-0 md:ml-64  "><img src="/public/rsz_food-removebg-preview.png" alt="" /></a>
+                    <a href="/" className="-mt-2 ml-24 -mr-20 lg:ml-0 lg:mr-0 md:ml-64  "><img src="https://i.ibb.co/52gRF6p/rsz-food-removebg-preview.png" alt="" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex  mt-4 mr-32 ">
                     <ul className="menu menu-horizontal px-1 text-lg ">
